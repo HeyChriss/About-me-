@@ -1,5 +1,6 @@
 import { Config } from 'types';
 import { Email, GitHub, LinkedIn, Resume } from 'icons';
+import { Projects } from 'icons/Projetcs';
 
 export const config: Config = {
   name: {
@@ -35,6 +36,14 @@ export const config: Config = {
       display: 'Email',
       ariaLabel: 'Email contact (opens in new window)',
       icon: <Email />,
+      href: 'mailto:mij17001@byui.edu',
+    },
+
+    {
+      name: 'projects',
+      display: 'Projects',
+      ariaLabel: 'Projects (opens in new window)',
+      icon: <Projects />,
       href: 'mailto:mij17001@byui.edu',
     },
     
