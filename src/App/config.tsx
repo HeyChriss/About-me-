@@ -1,6 +1,7 @@
 import { Config } from 'types';
 import { Email, GitHub, LinkedIn, Resume } from 'icons';
 import { Projects } from 'icons/Projetcs';
+import { AboutMe } from 'icons/AboutMe';
 
 export const config: Config = {
   name: {
@@ -44,7 +45,15 @@ export const config: Config = {
       display: 'Projects',
       ariaLabel: 'Projects (opens in new window)',
       icon: <Projects />,
-      href: 'mailto:mij17001@byui.edu',
+      href: '/projects',
+    },
+
+    {
+      name: 'about me',
+      display: 'About me',
+      ariaLabel: 'About me (opens in new window)',
+      icon: <AboutMe />,
+      href: '/aboutme',
     },
     
   ],

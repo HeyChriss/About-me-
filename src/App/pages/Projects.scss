@@ -1,0 +1,36 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling if not needed */
+  }
+  
+  .projects-page {
+    min-height: 100vh;
+    padding: 20px;
+    text-align: center;
+    overflow-y: auto; /* Allow vertical scrolling */
+  }
+  
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 20px; /* Add some padding at the bottom to avoid clipping */
+  }
+
+  .projects-page h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #4a4a4a;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #5448de, #ff6f61);
+    -webkit-background-clip: text; /* For older WebKit browsers */
+    background-clip: text; /* Standard property */
+    -webkit-text-fill-color: transparent; /* Ensures the text shows the gradient */
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }

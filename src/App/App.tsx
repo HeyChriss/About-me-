@@ -1,9 +1,12 @@
 import { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import './App.scss';
 import { AppProvider } from './AppContext';
 import { Buttons, Content, Footer, Particles, Toggle } from 'components';
 import { config } from './config';
+import Projects from './pages/Projects'; // Import the Projects component
+import AboutMe from './pages/AboutMe';
 
 export const App = () => {
   const [isReady, setIsReady]: [boolean, Function] = useState(false);
@@ -18,9 +21,6 @@ export const App = () => {
       setIsMobile(true);
     }
 
-    // before the state refactoring, 'theme' had a boolean-ish ('true', 'false')
-    // value in localStorage, now 'theme' has a theme value ('dark', 'light'),
-    // to prevent the site from breaking, older 'theme' entries should be updated
     const localStorageTheme: string | null = localStorage.getItem('theme');
     if (localStorageTheme === 'true') {
       localStorage.setItem('theme', 'dark');
@@ -35,16 +35,34 @@ export const App = () => {
     if (!isReady) init();
   }, [isReady]);
 
-  return isReady ? (
+  if (!isReady) {
+    return null; // This ensures nothing renders until the app is ready
+  }
+
+  return (
     <AppProvider config={config} isMobile={isMobile}>
-      <main className="app">
-        <Toggle />
-        <Content />
-        <Buttons />
-        <Particles />
-      </main>
+      <Router>
+        <main className="app">
+          
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <>
+                  <Content />
+                  <Buttons />
+                  <Particles />
+                  <Toggle />
+                </>
+              }
+            />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/aboutme" element={<AboutMe />} />
+          </Routes>
+          
+          <Footer />
+        </main>
+      </Router>
     </AppProvider>
-  ) : (
-    <></>
   );
 };

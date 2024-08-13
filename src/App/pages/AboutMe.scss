@@ -1,0 +1,137 @@
+.page.card-2-example-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    color: #fdfcfd;
+    font-family: 'Euclid Circular A', 'Poppins';
+  }
+  
+  .card-2 {
+    display: flex;
+    align-items: center;
+    width: 85vw; /* Increase the card width */
+    max-width: 950px; /* Increase the max-width */
+    padding: 60px 40px 60px 30px; /* Increase the padding */
+    background: #121017;
+    border-radius: 24px;
+    box-shadow: 0 80px 60px rgb(0 0 0 / 12%);
+  }
+  
+  .card-2 img {
+    max-width: 320px; /* Increase the image max-width */
+    width: 35vw; /* Increase the image width */
+    height: 350px; /* Increase the image height */
+    object-fit: cover;
+    margin-left: -60px;
+    margin-right: 40px; /* Increase the margin-right */
+    border-radius: inherit;
+    box-shadow: 0 60px 40px rgb(0 0 0 / 12%);
+    transition: border-radius 0.3s;
+  }
+  
+  .card-2 h2 {
+    font-size: 28px; /* Increase the font size */
+    font-weight: 500; /* Slightly increase the font weight */
+    margin-top: 0;
+    margin-right: 30px;
+    margin-bottom: 8px; /* Increase margin-bottom slightly */
+  }
+  
+  .card-2 h3 {
+    font-size: 18px; /* Increase the font size */
+    font-weight: 400;
+    margin: 0 0 16px; /* Increase the margin-bottom */
+    opacity: 0.66;
+  }
+  
+  .card-2 p {
+    font-size: 20px; /* Increase the font size */
+    font-weight: 400;
+    margin-bottom: 35px; /* Increase the margin-bottom */
+    opacity: 0.42;
+  }
+  
+  .card-2 .buttons {
+    display: flex;
+    gap: 14px; /* Increase the gap between buttons */
+  }
+  
+  .card-2 button {
+    border: 1px solid #f8f8f8;
+    background: transparent;
+    color: #f8f8f8;
+    width: 45%; /* Slightly increase button width */
+    min-width: 120px; /* Increase min-width */
+    text-align: center;
+    font-family: inherit;
+    padding: 14px 28px; /* Increase padding */
+    font-size: 18px; /* Increase font size */
+    border-radius: 40px;
+    transition: all 0.3s ease; /* Add transition for smooth hover effect */
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+  
+  .card-2 button.primary {
+    background: #ffffff;
+    color: #121017;
+  }
+
+
+  .card-2 button:hover {
+    background: #ffffff; /* Change background on hover */
+    color: #121017; /* Change text color on hover */
+    transform: translateY(-3px); /* Lift the button on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+  }
+  
+  .card-2 button.primary:hover {
+    background: transparent;
+    color: #f8f8f8;
+    border: 1px solid #ffffff;
+  }
+  
+  @media (max-width: 600px) {
+    .card-2 {
+      margin: 0 40px;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-bottom: 60px;
+      width: 100%;
+      text-align: center;
+      flex-direction: column;
+    }
+  
+    .card-2 .buttons {
+      justify-content: center;
+    }
+  
+    .card-2 .buttons button {
+      width: 60%; /* Adjust width for smaller screens */
+    }
+  
+    .card-2 h2 {
+      margin-right: 0;
+      font-size: 26px;
+    }
+  
+    .card-2 img {
+      margin: -100px 0 30px 0;
+      width: 100%;
+      max-width: 1000px;
+      height: 250px;
+    }
+  
+    .card-2 p {
+      max-width: 400px;
+    }
+  }
+  
+  @media (max-width: 420px) {
+    .card-2 img {
+      height: 50vw;
+      width: 50vw;
+      border-radius: 50%;
+      margin: -140px 0 30px 0;
+    }
+  }
