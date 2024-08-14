@@ -45,21 +45,23 @@ export const App = () => {
         <main className="app">
           
           <Routes>
+
             <Route
               path="/"
               element={
                 <>
+                  <Toggle />
                   <Content />
                   <Buttons />
                   <Particles />
-                  <Toggle />
+ 
                 </>
               }
             />
             <Route path="/projects" element={<Projects />} />
             <Route path="/aboutme" element={<AboutMe />} />
           </Routes>
-          
+
           <Footer />
         </main>
       </Router>

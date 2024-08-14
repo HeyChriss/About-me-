@@ -8,7 +8,7 @@ This portfolio showcases some of my work, skills, and projects that I've develop
 
 ## About Me
 - **Education**: Currently pursuing a degree at BYUI
-- **Seeking**: Internships and first-time job positions in the field of web development and software engineering
+- **Seeking**: Internships and first-time job positions in the field of software engineering or AI Machine learning.
 
 ## Portfolio
 

@@ -32,6 +32,33 @@ export const Footer = () => {
 
   return (
     <F.Container $isMobile={isMobile}>
+      <F.Text data-v2="footer" $theme={theme}>
+        <F.Link
+          data-v2="creator"
+          aria-label="Christian's personal website"
+          href="/"
+          rel="noopener noreferrer"
+          target="_blank"
+          $theme={theme}
+        >
+          {'Christian Mijangos'}
+        </F.Link>
+        {!isMobile && (
+          <>
+            {' | '}
+            <F.Link
+              data-v2="source"
+              aria-label="Source code for this website (opens in new window)"
+              href="https://github.com/HeyChriss/About-me-"
+              rel="noopener noreferrer"
+              target="_blank"
+              $theme={theme}
+            >
+              {'Source'}
+            </F.Link>
+          </>
+        )}
+      </F.Text>
     </F.Container>
   );
 };
