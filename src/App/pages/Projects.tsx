@@ -8,6 +8,24 @@ const Projects = () => {
       <h1>Projects and Experience</h1>
       <div className="cards-container">
       <Card
+          image="/rexride.png"
+          title="Rex Ride"
+          type="Website (Hackaton)"
+          description="I led a team during a hackathon to develop a rideshare app tailored for students at my university. We successfully built the app within 24 hours, focusing on user-friendly features and functionality. Currently,
+           my group and I are exploring ways to enhance the website and deploy it for broader and more efficient use."
+          buttonText="Github Link"
+          buttonLink="https://github.com/HeyChriss/RexRide" // Example of internal navigation
+        />
+      <Card
+          image="/orbit.png"
+          title="Orbit Simulator"
+          type="C++ Software Design"
+          description="I am currently designing an orbit simulator from scratch in C++. The primary goal of this project is to deepen my understanding of Object-Oriented Programming (OOP) concepts such as class design, inheritance, polymorphism, and encapsulation.
+           This simulator serves as a practical learning tool to explore effective OOP design principles while modeling celestial mechanics."
+          buttonText="Github Link"
+          buttonLink="https://github.com/HeyChriss/OrbitSimulatorV2" // Example of internal navigation
+        />
+      <Card
           image="/Chatbot.png"
           title="Chatbot Assistant"
           type="Machine Learning"
