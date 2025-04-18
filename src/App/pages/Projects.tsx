@@ -8,6 +8,15 @@ const Projects = () => {
       <h1>Projects and Experience</h1>
       <div className="cards-container">
       <Card
+          image="/sumai.png"
+          title="SumAi"
+          type="Chrome Extension"
+          description="SumAI is a Google Chrome extension that transforms any website into an interactive knowledge source. While you browse, SumAI intelligently extracts and processes content, 
+          allowing you to ask questions and receive instant, AI-powered answers tailored to the specific page you're viewing."
+          buttonText="Github Link"
+          buttonLink="https://github.com/HeyChriss/SumAI" // Example of internal navigation
+        />
+      <Card
           image="/Blank diagram.svg"
           title="AI Multi-Agent Research System"
           type="AI Agent"
