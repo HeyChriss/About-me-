@@ -8,6 +8,15 @@ const Projects = () => {
       <h1>Projects and Experience</h1>
       <div className="cards-container">
       <Card
+          image="/Blank diagram.svg"
+          title="AI Multi-Agent Research System"
+          type="AI Agent"
+          description="A sophisticated multi-agent AI system designed to assist with research tasks using LangChain and various specialized tools. 
+          This system employs multiple AI agents working in concert to handle different aspects of the research process."
+          buttonText="Github Link"
+          buttonLink="https://github.com/HeyChriss/AI-Agent-Research" // Example of internal navigation
+        />
+      <Card
           image="/rexride.png"
           title="Rex Ride"
           type="Website (Hackaton)"
