@@ -9,7 +9,11 @@ import { Theme } from 'types';
 const P = {
   Container: styled.div<{ $theme: Theme }>`
     transition: background-color 0.5s linear;
-    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
     background-color: ${({ $theme }) => $theme.background};
     background-repeat: no-repeat;
     background-size: cover;

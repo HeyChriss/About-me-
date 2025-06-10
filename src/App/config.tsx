@@ -2,6 +2,7 @@ import { Config } from 'types';
 import { Email, GitHub, LinkedIn, Resume } from 'icons';
 import { Projects } from 'icons/Projetcs';
 import { AboutMe } from 'icons/AboutMe';
+import { BlogIcon } from 'icons';
 
 export const config: Config = {
   name: {
@@ -30,7 +31,7 @@ export const config: Config = {
       display: 'Resume',
       ariaLabel: 'Resume in Google Drive (opens in new window)',
       icon: <Resume />,
-      href: 'https://drive.google.com/file/d/1Nj7yoRHw4gpwhIkStF2siWdoCYBDTZTn/view?usp=sharing',
+      href: 'https://drive.google.com/file/d/1r7f3OISl9Dw_t8boOS-ewd-7Ea3oDD04/view?usp=sharing',
     },
     {
       name: 'email',
@@ -39,7 +40,13 @@ export const config: Config = {
       icon: <Email />,
       href: 'mailto:mij17001@byui.edu',
     },
-
+    {
+      name: 'blog',
+      display: 'Blog',
+      ariaLabel: 'Blog (opens in new window)',
+      icon: <BlogIcon />,
+      href: '/blog',
+    },
     {
       name: 'projects',
       display: 'Projects',
@@ -47,7 +54,6 @@ export const config: Config = {
       icon: <Projects />,
       href: '/projects',
     },
-
     {
       name: 'about me',
       display: 'About me',

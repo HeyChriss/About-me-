@@ -5,6 +5,10 @@
   margin: 0;
   color: #fdfcfd;
   font-family: 'Euclid Circular A', 'Poppins';
+  background: transparent; /* Remove any background color to show particles */
+  min-height: 100vh; /* Ensure full height */
+  position: relative;
+  z-index: 1;
 }
 
 .card-2 {

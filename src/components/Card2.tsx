@@ -18,7 +18,7 @@ const Card2: React.FC<Card2Props> = ({ image, title, subtitle, description, onPr
         <h3>{subtitle}</h3>
         <p>{description}</p>
         <div className="buttons">
-          <button onClick={onProfile}>Profile</button>
+          <button onClick={onProfile}>Main Menu</button>
           <button onClick={onLinkedIn} className="primary">
             LinkedIn
           </button>

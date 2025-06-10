@@ -35,9 +35,8 @@ const T = {
   Switch: styled.label<{ $theme: Theme }>`
     cursor: pointer;
     display: flex;
-    width: 1.5rem;
-    height: 1.5rem;
-    padding: 0.75rem;
+    width: 2.5rem;
+    height: 2.5rem;
     background-color: ${({ $theme }) => $theme.shadowColor};
     border-radius: 25%;
     box-shadow: 0 0 0.25rem 0.25rem rgba(128, 128, 128, 0.25);

@@ -7,6 +7,7 @@ import { Buttons, Content, Footer, Particles, Toggle } from 'components';
 import { config } from './config';
 import Projects from './pages/Projects'; // Import the Projects component
 import AboutMe from './pages/AboutMe';
+import Blog from './pages/Blog';
 
 export const App = () => {
   const [isReady, setIsReady]: [boolean, Function] = useState(false);
@@ -60,6 +61,7 @@ export const App = () => {
             />
             <Route path="/projects" element={<Projects />} />
             <Route path="/aboutme" element={<AboutMe />} />
+            <Route path="/blog" element={<Blog />} />
           </Routes>
 
           <Footer />

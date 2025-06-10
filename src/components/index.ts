@@ -1,4 +1,5 @@
 export * from './Buttons';
+export * from './BlogCard';
 export * from './Content';
 export * from './Footer';
 export * from './Particles';

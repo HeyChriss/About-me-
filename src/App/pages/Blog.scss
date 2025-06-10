@@ -5,7 +5,7 @@ html, body {
   overflow-x: hidden; /* Prevent horizontal scrolling if not needed */
 }
 
-.projects-page {
+.blog-page {
   min-height: 100vh;
   padding: 20px;
   text-align: center;
@@ -21,7 +21,7 @@ html, body {
   padding-bottom: 20px; /* Add some padding at the bottom to avoid clipping */
 }
 
-.projects-page h1 {
+.blog-page h1 {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 30px;
@@ -39,11 +39,11 @@ html, body {
 
 /* Responsive Styles for Phones */
 @media only screen and (max-width: 740px) {
-  .projects-page {
+  .blog-page {
       padding: 15px; /* Reduce padding on smaller screens */
   }
 
-  .projects-page h1 {
+  .blog-page h1 {
       font-size: 2rem; /* Reduce font size for the header */
       margin-bottom: 20px; /* Reduce bottom margin */
       letter-spacing: 1px; /* Adjust letter spacing */
@@ -55,4 +55,4 @@ html, body {
       gap: 15px; /* Reduce gap between cards */
       padding-bottom: 15px; /* Adjust bottom padding */
   }
-}
+} 
