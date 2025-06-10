@@ -58,14 +58,13 @@ const Blog = () => {
           <div className="cards-container">
             <BlogCard
               title="Getting Started with blogging"
-              category="Programming"
-              subtitle="Writing"
+              category="Life and Tech"
               readTime="5"
               publishedDate="June 10, 2025"
-              excerpt="Learn the fundamentals of React development and build your first application step by step..."
+              excerpt="Welcome to my blog! This is my first blog post where I'll be sharing my thoughts, experiences..."
               authorMatch={0}
               buttonText="Read Article"
-              buttonLink="https://react.dev/learn"
+              buttonLink="/first-blog"
             />
           </div>
         </div>

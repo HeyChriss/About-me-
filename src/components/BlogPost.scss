@@ -1,0 +1,52 @@
+.blog-post {
+  // Smooth scroll behavior for anchor links
+  scroll-behavior: smooth;
+  
+  // Ensure the blog post takes full height and width
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  
+  // Enhanced image styling for blog content
+  img {
+    transition: transform 0.3s ease;
+    
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+  
+  // Print styles
+  @media print {
+    * {
+      -print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+    
+    background: white !important;
+    color: black !important;
+    
+    // Hide toggle when printing
+    .toggle-container {
+      display: none !important;
+    }
+  }
+}
+
+
+
+
+// Focus styles for accessibility
+.blog-post *:focus {
+  outline: 2px solid #356aff;
+  outline-offset: 2px;
+}
+
+// Selection styles
+.blog-post ::selection {
+  background-color: rgba(53, 106, 255, 0.2);
+}
+
+.blog-post ::-moz-selection {
+  background-color: rgba(53, 106, 255, 0.2);
+} 

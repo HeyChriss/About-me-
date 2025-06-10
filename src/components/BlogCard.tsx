@@ -4,7 +4,6 @@ import './BlogCard.scss';
 interface BlogCardProps {
   title: string;
   category: string;
-  subtitle: string;
   readTime: string;
   publishedDate: string;
   excerpt: string;
@@ -16,7 +15,6 @@ interface BlogCardProps {
 export const BlogCard: React.FC<BlogCardProps> = ({
   title,
   category,
-  subtitle,
   readTime,
   publishedDate,
   excerpt,
@@ -28,8 +26,7 @@ export const BlogCard: React.FC<BlogCardProps> = ({
     <img src="/write.png" alt="Blog logo" />
     <div className="main">
       <h2>{title}</h2>
-      <h3>{category}</h3>
-      <h4>{subtitle}</h4>
+      <h4>{category}</h4>
       <h5>{excerpt}</h5>
     </div>
     <div className="details">

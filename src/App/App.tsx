@@ -8,6 +8,7 @@ import { config } from './config';
 import Projects from './pages/Projects'; // Import the Projects component
 import AboutMe from './pages/AboutMe';
 import Blog from './pages/Blog';
+import FirstBlog from './pages/first_blog';
 
 export const App = () => {
   const [isReady, setIsReady]: [boolean, Function] = useState(false);
@@ -62,6 +63,7 @@ export const App = () => {
             <Route path="/projects" element={<Projects />} />
             <Route path="/aboutme" element={<AboutMe />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/first-blog" element={<FirstBlog />} />
           </Routes>
 
           <Footer />
