@@ -32,26 +32,28 @@ const Blog = () => {
         <div className="blog-page">
           <h1>Blog Posts & Articles</h1>
           <div className="cards-container">
+          <BlogCard
+              title="AlexNet Architecture"
+              category="Deep Learning"
+              readTime="15"
+              publishedDate="June 15, 2025"
+              excerpt="What is AlexNet? How does it work? What are the layers? What are the advantages and disadvantages?"
+              authorMatch={100}
+              buttonText="Read Article"
+              buttonLink="/alexnet"
+            />
+            
             <BlogCard
               title="Getting Started with blogging"
               category="Life and Tech"
               readTime="5"
               publishedDate="June 10, 2025"
               excerpt="Welcome to my blog! This is my first blog post where I'll be sharing my thoughts, experiences..."
-              authorMatch={0}
+              authorMatch={100}
               buttonText="Read Article"
               buttonLink="/first-blog"
             />
-            <BlogCard
-              title="AlexNet Architecture"
-              category="Deep Learning"
-              readTime="10"
-              publishedDate="June 15, 2025"
-              excerpt="What is AlexNet? How does it work? What are the layers? What are the advantages and disadvantages?"
-              authorMatch={0}
-              buttonText="Read Article"
-              buttonLink="/alexnet"
-            />
+            
           </div>
         </div>
       </BlogContent>
