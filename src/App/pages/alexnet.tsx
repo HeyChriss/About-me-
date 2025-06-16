@@ -39,6 +39,7 @@ const AlexNet = () => {
       date="June 15, 2025"
       postId="alexnet"
     >
+      <p>You can read the same post in my <a href=" https://medium.com/@christianmijangos.cm/alexnet-architecture-73f5781d5891">medium page</a>. </p>
       <p>
         Finding good neural network architectures is definitely hard, you have to keep in mind how clean your data is, 
         the amount of data you'll be training and of course, the layers and architecture you'll be using for your model.
@@ -303,7 +304,13 @@ def train_alexnet():
 Neural Networks"
         url="https://proceedings.neurips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf"
       />
-        <Citation
+      <Citation
+        authors={['Christian Mijangos']}
+        year={2024}
+        title="AlexNet Architecture"
+        url="https://medium.com/@christianmijangos.cm/alexnet-architecture-73f5781d5891"
+      />
+      <Citation
         authors={['Siddhesh Bangar']}
         year={2022}
         title="AlexNet Architecture Explained"
