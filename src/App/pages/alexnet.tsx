@@ -70,7 +70,7 @@ const AlexNet = () => {
       </p>
 
       <h3>AlexNet Architecture</h3>
-      <img src="alexnet architecture.png" alt="AlexNet Architecture" />
+      <img src="/alexnet architecture.png" alt="AlexNet Architecture" />
       <p>
         AlexNet was much larger than previous CNN's used for computer vision tasks (e.g. Yann LeCun's LeNet paper in 1998). 
         This was the first architecture that used GPU to boost the training performance, and it took approximately 5 to 6 
@@ -101,7 +101,7 @@ const AlexNet = () => {
       <p>
         All of the layers containing the relu activation function and the softmax activation function at the end.
       </p>
-      <img src="relu.png" alt="ReLU" style={{ width: '30%' }} />
+      <img src="/relu.png" alt="ReLU" style={{ width: '30%' }} />
       <p>
         The architecture is pretty simple, but it is a good example of how to use a CNN for image classification.
       </p>
@@ -144,7 +144,7 @@ const AlexNet = () => {
         They used a 3x3 window with a stride of 2. This means that the type of pooling they used was an overlapping pooling which I am 
         not going to get into the details of it, but it is simply taking the maximum value of a 3x3 window and moving it by 2 pixels.
       </p>
-      <img src="pooling.png" alt="Max-pooling" style={{ width: '30%' }} />
+      <img src="/pooling.png" alt="Max-pooling" style={{ width: '30%' }} />
 
       <p>
         <strong>Data augmentation:</strong> Data augmentation is simple. It's adding different variation of the same image. 
@@ -157,19 +157,19 @@ const AlexNet = () => {
         The AlexNet team used <strong>mirroring</strong> which is simply taking the image and flip it by vertical axis. This is good because 
         it helps the model to not memorize the image and it also helps to avoid overfitting.
       </p>
-      <img src="mirror.png" alt="Mirroring" style={{ width: '50%' }} />
+      <img src="/mirror.png" alt="Mirroring" style={{ width: '50%' }} />
       <p>
         and <strong>Random crops</strong> which is creating different images of an image with different size input. 
         The AlexNet team extracted random crops of size 227×227 from inside the 256×256 image boundary to use as the network's inputs. 
         They increased the size of the data by a factor of 2048 using this method.
         </p>
-      <img src="crop.png" alt="Random crops" style={{ width: '50%' }} />
+      <img src="/crop.png" alt="Random crops" style={{ width: '50%' }} />
       <p>
         <strong>Dropout:</strong> Another method they used was dropout. I won't get into the details of dropout in this post, but it is simply 
         dropping random neurons in the layers so they stop communicating in propagation, this mitigates overfitting 
         because it forces the model to "drop" neurons and make other neurons learn the patterns instead of memorizing them.
       </p>
-      <img src="dropout.png" alt="Dropout" style={{ width: '50%' }} />
+      <img src="/dropout.png" alt="Dropout" style={{ width: '50%' }} />
 
       <h3>Historical Significance</h3>
       <p>
