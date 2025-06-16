@@ -7,6 +7,7 @@ const FirstBlog = () => {
       title="Welcome to My First Blog Post"
       author="Christian Mijangos"
       date="June 10, 2025"
+      postId="first-blog"
     >
       <p>
         Welcome to my blog! This is my first blog post where I'll be sharing my thoughts, 

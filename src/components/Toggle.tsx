@@ -20,6 +20,16 @@ const T = {
       -webkit-transform: scale(0.9);
       transform: scale(0.9);
     }
+
+    @media (max-width: 768px) {
+      top: 0.75rem;
+      right: 0.75rem;
+    }
+
+    @media (max-width: 480px) {
+      top: 0.5rem;
+      right: 0.5rem;
+    }
   `,
   /* Toggle CSS changes for accessibility: https://stackoverflow.com/a/20130500 */
   Toggle: styled.input`
@@ -44,6 +54,16 @@ const T = {
     justify-content: center;
     transition: background-color 0.5s linear;
     font-size: 0.5rem;
+
+    @media (max-width: 768px) {
+      width: 2rem;
+      height: 2rem;
+    }
+
+    @media (max-width: 480px) {
+      width: 1.75rem;
+      height: 1.75rem;
+    }
   `,
   VisuallyHidden: styled.span`
     position: absolute;

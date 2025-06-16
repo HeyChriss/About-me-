@@ -5,6 +5,7 @@ import { Particles, Toggle } from 'components';
 import { AppContext } from 'App/AppContext';
 import { Theme } from 'types';
 import './AboutMe.scss';
+import { HomeButton } from 'components/HomeButton';
 
 const AboutMeContainer = styled.div<{ $theme: Theme }>`
   position: relative;
@@ -24,6 +25,7 @@ const AboutMe = () => {
   return (
     <AboutMeContainer $theme={theme}>
       <Particles />
+      <HomeButton href="/" />
       <AboutMeContent>
         <Toggle />
         <div className="aboutme-page page card-2-example-page">

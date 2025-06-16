@@ -3,12 +3,16 @@ import styled from 'styled-components';
 import { AppContext } from 'App/AppContext';
 import { Toggle } from './Toggle';
 import { Theme } from 'types';
+import { LikeCounter } from './LikeCounter';
+import { HomeButton } from './HomeButton';
+import { Citation } from './Citation';
 import './BlogPost.scss';
 
 interface BlogPostProps {
   title: string;
   author: string;
   date: string;
+  postId: string;
   children: React.ReactNode;
 }
 
@@ -31,31 +35,6 @@ const BlogPostContainer = styled.div<{ $theme: Theme }>`
     background-color: ${({ $theme }) => $theme.background};
     z-index: -1;
     transition: background-color 0.3s ease;
-  }
-`;
-
-const HomeButton = styled.a`
-  position: fixed;
-  top: 1rem;
-  left: 1rem;
-  z-index: 10;
-  border: 0;
-  background: linear-gradient(90deg,rgb(255, 255, 255),rgb(255, 255, 255));
-  color:rgb(0, 0, 0);
-  font-family: inherit;
-  padding: 16px 26px;
-  font-size: 16px;
-  border-radius: 40px;
-  transition: background 0.3s ease, transform 0.3s ease;
-  cursor: pointer;
-  text-decoration: none;
-  display: inline-block;
-
-  &:hover {
-    background: linear-gradient(90deg,rgb(0, 0, 0),rgb(0, 0, 0));
-    transform: translateY(-3px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-    color: #f8f8f8;
   }
 `;
 
@@ -99,6 +78,13 @@ const BlogPostMeta = styled.div<{ $theme: Theme }>`
   }
 `;
 
+const MetaContent = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+`;
+
 const AuthorName = styled.span<{ $theme: Theme }>`
   font-weight: 500;
   color: ${({ $theme }) => $theme.primaryTextColor};
@@ -140,6 +126,7 @@ const BlogPostBody = styled.div<{ $theme: Theme }>`
     margin: 40px 0 12px 0;
     line-height: 1.4;
     color: ${({ $theme }) => $theme.primaryTextColor};
+    text-align: left;
   }
   
   h4 {
@@ -193,10 +180,13 @@ const BlogPostBody = styled.div<{ $theme: Theme }>`
   }
   
   ul, ol {
-    margin: 0 0 24px 20px;
+    margin: 0 0 24px 0;
+    padding-left: 24px;
+    text-align: left;
     
     li {
       margin-bottom: 8px;
+      text-align: left;
     }
   }
   
@@ -210,19 +200,22 @@ const BlogPostBody = styled.div<{ $theme: Theme }>`
   }
 `;
 
-export const BlogPost: React.FC<BlogPostProps> = ({ title, author, date, children }) => {
+export const BlogPost: React.FC<BlogPostProps> = ({ title, author, date, postId, children }) => {
   const { theme } = useContext(AppContext);
 
   return (
     <BlogPostContainer $theme={theme} className="blog-post">
-      <HomeButton href="/">Home</HomeButton>
+      <HomeButton href="/" />
       <Toggle />
       <BlogPostContent $theme={theme}>
         <BlogPostHeader>
           <BlogPostTitle $theme={theme}>{title}</BlogPostTitle>
           <BlogPostMeta $theme={theme}>
-            <AuthorName $theme={theme}>By {author}</AuthorName>
-            <PublishDate>{date}</PublishDate>
+            <MetaContent>
+              <AuthorName $theme={theme}>By {author}</AuthorName>
+              <PublishDate>{date}</PublishDate>
+              <LikeCounter postId={postId} />
+            </MetaContent>
           </BlogPostMeta>
         </BlogPostHeader>
         <BlogPostBody $theme={theme}>
@@ -231,4 +224,6 @@ export const BlogPost: React.FC<BlogPostProps> = ({ title, author, date, childre
       </BlogPostContent>
     </BlogPostContainer>
   );
-}; 
+};
+
+export { LikeCounter, Citation }; 
