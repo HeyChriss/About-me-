@@ -135,10 +135,6 @@ const AlexNet = () => {
     <p>
         Nowadays LRNs are not as popular as before because Batch Normalization in 2015 proved much more effective, however, LRN was crucial for AlexNet's success in 2012, when batch normalization didn't exist and networks were much harder to train effectively.
     </p>
-    <p>
-      <strong>Max-pooling:</strong> Max-pooling is a technique that reduces the size of the input by taking the maximum value 
-      of a region of the input. This is good because it reduces the amount of parameters and it also helps to avoid overfitting.
-    </p>
       <p>
         <strong>Max-pooling:</strong> Max-pooling is a technique that reduces the size of the input by taking the maximum value 
         of a region of the input. This is good because it reduces the amount of parameters and it also helps to avoid overfitting.
