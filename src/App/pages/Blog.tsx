@@ -32,10 +32,22 @@ const Blog = () => {
         <div className="blog-page">
           <h1>Blog Posts & Articles</h1>
           <div className="cards-container">
+
           <BlogCard
-              title="AlexNet Architecture"
-              category="Deep Learning"
+              title="Deep Learning"
+              category="Siamese Neural Networks"
               readTime="15"
+              publishedDate="June 19, 2025"
+              excerpt="What are siamese neural networks? How do they work and what is it for?..."
+              authorMatch={100}
+              buttonText="Read Article"
+              buttonLink="/siamese"
+            />
+
+          <BlogCard
+              title="Deep Learning"
+              category="AlexNet Architecture"
+              readTime="10"
               publishedDate="June 15, 2025"
               excerpt="What is AlexNet? How does it work? What are the layers? What are the advantages and disadvantages?"
               authorMatch={100}
@@ -44,8 +56,8 @@ const Blog = () => {
             />
             
             <BlogCard
-              title="Getting Started with blogging"
-              category="Life and Tech"
+              title="Life and Tech"
+              category="Getting started with blogging..."
               readTime="5"
               publishedDate="June 10, 2025"
               excerpt="Welcome to my blog! This is my first blog post where I'll be sharing my thoughts, experiences..."

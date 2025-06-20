@@ -10,6 +10,7 @@ import AboutMe from './pages/AboutMe';
 import Blog from './pages/Blog';
 import FirstBlog from './pages/first_blog';
 import AlexNet from './pages/alexnet';
+import Siamese from './pages/siamese';
 
 export const App = () => {
   const [isReady, setIsReady]: [boolean, Function] = useState(false);
@@ -66,6 +67,7 @@ export const App = () => {
             <Route path="/blog" element={<Blog />} />
             <Route path="/first-blog" element={<FirstBlog />} />
             <Route path="/alexnet" element={<AlexNet />} />
+            <Route path="/siamese" element={<Siamese />} />
           </Routes>
 
           <Footer />
