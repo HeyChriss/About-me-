@@ -34,6 +34,18 @@ const Blog = () => {
           <div className="cards-container">
 
           <BlogCard
+              title="Personal Project"
+              category="Building an AI Outfit Creator - Part 1 "
+              readTime="10"
+              publishedDate="June 25, 2025"
+              excerpt="Where do you start when you build a project? Software design and ML combined?"
+              authorMatch={100}
+              buttonText="Read Article"
+              buttonLink="/drippedup1"
+            />
+
+
+          <BlogCard
               title="Deep Learning"
               category="Xception CNN Architecture"
               readTime="12"
