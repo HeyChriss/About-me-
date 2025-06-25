@@ -11,6 +11,7 @@ import Blog from './pages/Blog';
 import FirstBlog from './pages/first_blog';
 import AlexNet from './pages/alexnet';
 import Siamese from './pages/siamese';
+import Xception from './pages/xception';
 
 export const App = () => {
   const [isReady, setIsReady]: [boolean, Function] = useState(false);
@@ -68,6 +69,7 @@ export const App = () => {
             <Route path="/first-blog" element={<FirstBlog />} />
             <Route path="/alexnet" element={<AlexNet />} />
             <Route path="/siamese" element={<Siamese />} />
+            <Route path="/xception" element={<Xception />} />
           </Routes>
 
           <Footer />

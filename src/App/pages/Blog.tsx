@@ -35,6 +35,17 @@ const Blog = () => {
 
           <BlogCard
               title="Deep Learning"
+              category="Xception CNN Architecture"
+              readTime="12"
+              publishedDate="June 24, 2025"
+              excerpt="What is Xception? How does it work? What makes it special? Understanding depthwise separable convolutions..."
+              authorMatch={100}
+              buttonText="Read Article"
+              buttonLink="/xception"
+            />
+
+          <BlogCard
+              title="Deep Learning"
               category="Siamese Neural Networks"
               readTime="15"
               publishedDate="June 19, 2025"
