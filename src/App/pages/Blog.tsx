@@ -35,6 +35,17 @@ const Blog = () => {
 
           <BlogCard
               title="Personal Project"
+              category="Building an AI Outfit Creator - Part 2 "
+              readTime="10"
+              publishedDate="July 2, 2025"
+              excerpt="ML Training and Results"
+              authorMatch={100}
+              buttonText="Read Article"
+              buttonLink="/drippedup2"
+            />
+
+          <BlogCard
+              title="Personal Project"
               category="Building an AI Outfit Creator - Part 1 "
               readTime="10"
               publishedDate="June 25, 2025"
