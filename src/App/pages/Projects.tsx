@@ -57,6 +57,15 @@ const Projects = () => {
           <h1>Projects and Experience</h1>
           <div className="cards-container">
           <Card
+              image="/drippedup.png"
+              title="Dripped Up"
+              type="AI application and ML model"
+              description="Dripped Up is a web application that allows users to create outfits with their own clothes. It is built with React, Node.js, and Supabase. It is trained with two ML models, one for clothing detection and one for outfit generation."
+              buttonText="Github Link"
+              buttonLink="https://github.com/HeyChriss/AI-Outfit-Creator" // Example of internal navigation
+            />
+
+          <Card
               image="/accent.png"
               title="Accent Detector"
               type="AI application"
