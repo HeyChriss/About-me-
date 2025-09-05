@@ -30,16 +30,19 @@ const AboutMe = () => {
         <Toggle />
         <div className="aboutme-page page card-2-example-page">
           <Card2
-            image="/Christian.jpg" // Replace with the actual path to your image
-            title="Christian Mijangos"
-            subtitle="Software Engineer"
-            description="Hi, I'm Christian Mijangos, a passionate software engineer from Guatemala currently studying at BYU-Idaho. I am pursuing a degree in Software Engineering with an emphasis on software design and a minor in Computer Information Technology. My deep love for technology and innovation drives me to build robust, scalable applications, and I excel at solving complex challenges across various programming languages and frameworks. As a naturally curious person,
-             I am always eager to learn and expand my knowledge in the ever-evolving field of technology.
-                Outside of coding, I enjoy exploring new cultures through travel, playing soccer, and working on exciting
-            programming projects in my free time. My current interests include machine learning and generative AI,
-            and I'm always keen to embrace new technologies and ideas.
-            Thank you for visiting my website! If you're interested in collaborating on innovative projects or simply want to connect,
-            I would love to hear from you. I'm always open to new opportunities and ready to take on exciting challenges!"
+            image="/chris.jpg" 
+            title="Chris Mijangos"
+            subtitle="AI & Machine Learning Graduate Student"
+            description="Hi! I'm Chris Mijangos, and I'm currently pursuing a master's degree in Computer Science at BYU with an emphasis in AI and Machine Learning. I completed my undergraduate studies in software engineering, focusing on software design and data science.
+
+            I'm passionate about technology and eager to learn new things. Currently, I'm collaborating with professors on research papers as I work toward my goal of becoming an AI engineer. In my free time, you'll find me reading books about software development, AI, and ML, or enjoying outdoor activities like hiking and playing soccer. I also love playing guitar and working on my car!
+
+            What drives me most is collaboration. I thrive when working with others on software and research projects, or just talking! I'm naturally curious, and if there's something I don't know, I make it a priority to learn it. I strongly believe that knowledge is essential for a fulfilling life and that continuous learning opens doors to innovation. The more I learn, the more I realize how much there is still to discover, which motivates me to continue growing and advancing in my field.
+
+            I enjoy building new things, especially through software development, and I'm always looking for ways to innovate. When I'm not coding or researching, I love spending quality time with family and friends. As a Christian, I find great fulfillment in serving others and contributing to my community.
+
+            Please connect with me and let's talk and innovate together!"
+            theme={theme}
             onProfile={() => window.location.href = '/'} // 
             onLinkedIn={() => window.location.href = 'https://www.linkedin.com/in/christianmijangos5454/'}
           />

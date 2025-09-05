@@ -31,14 +31,14 @@ export const config: Config = {
       display: 'Resume',
       ariaLabel: 'Resume in Google Drive (opens in new window)',
       icon: <Resume />,
-      href: 'https://drive.google.com/file/d/1r7f3OISl9Dw_t8boOS-ewd-7Ea3oDD04/view?usp=sharing',
+      href: 'https://drive.google.com/file/d/1tM-hmxI9_RFS85Wk5EN3Ye8XVcO4lzu_/view?usp=sharing',
     },
     {
       name: 'email',
       display: 'Email',
       ariaLabel: 'Email contact (opens in new window)',
       icon: <Email />,
-      href: 'mailto:mij17001@byui.edu',
+      href: 'mailto:heychris@byu.edu',
     },
     {
       name: 'blog',

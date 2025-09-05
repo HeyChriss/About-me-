@@ -17,9 +17,10 @@
   width: 85vw; /* Increase the card width */
   max-width: 950px; /* Increase the max-width */
   padding: 60px 40px 60px 30px; /* Increase the padding */
-  background: #121017;
+  background: var(--card-bg);
   border-radius: 24px;
-  box-shadow: 0 80px 60px rgb(0 0 0 / 12%);
+  box-shadow: 0 80px 60px var(--card-shadow);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card-2 img {
@@ -40,20 +41,21 @@
   margin-top: 0;
   margin-right: 30px;
   margin-bottom: 8px; /* Increase margin-bottom slightly */
+  color: var(--card-text-primary);
 }
 
 .card-2 h3 {
   font-size: 18px; /* Increase the font size */
   font-weight: 400;
   margin: 0 0 16px; /* Increase the margin-bottom */
-  opacity: 0.66;
+  color: var(--card-text-secondary);
 }
 
 .card-2 p {
   font-size: 20px; /* Increase the font size */
   font-weight: 400;
   margin-bottom: 35px; /* Increase the margin-bottom */
-  opacity: 0.42;
+  color: var(--card-text-tertiary);
 }
 
 .card-2 .buttons {
@@ -62,9 +64,9 @@
 }
 
 .card-2 button {
-  border: 1px solid #f8f8f8;
+  border: 1px solid var(--button-border);
   background: transparent;
-  color: #f8f8f8;
+  color: var(--button-text);
   width: 45%; /* Slightly increase button width */
   min-width: 120px; /* Increase min-width */
   text-align: center;
@@ -77,21 +79,21 @@
 }
 
 .card-2 button.primary {
-  background: #ffffff;
-  color: #121017;
+  background: var(--button-primary-bg);
+  color: var(--button-primary-text);
 }
 
 .card-2 button:hover {
-  background: #ffffff; /* Change background on hover */
-  color: #121017; /* Change text color on hover */
+  background: var(--button-primary-bg); /* Change background on hover */
+  color: var(--button-primary-text); /* Change text color on hover */
   transform: translateY(-3px); /* Lift the button on hover */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+  box-shadow: 0 10px 20px var(--card-shadow); /* Add shadow on hover */
 }
 
 .card-2 button.primary:hover {
   background: transparent;
-  color: #f8f8f8;
-  border: 1px solid #ffffff;
+  color: var(--button-text);
+  border: 1px solid var(--button-border);
 }
 
 /* Responsive Styles */

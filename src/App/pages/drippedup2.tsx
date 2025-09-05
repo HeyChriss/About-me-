@@ -1,35 +1,6 @@
 import React from 'react';
 import { BlogPost } from 'components';
-import styled from 'styled-components';
 
-const CodeBlock = styled.div`
-  font-family: monospace;
-  white-space: pre;
-  overflow-x: auto;
-  font-size: 12px;
-  position: relative;
-  text-align: left;
-  padding: 20px;
-  background-color: ${({ theme }) => theme.shadowColor};
-  color: ${({ theme }) => theme.primaryTextColor};
-  border-radius: 8px;
-  margin-bottom: 20px;
-  width: fit-content;
-  max-width: 100%;
-
-  @media (max-width: 768px) {
-    font-size: 10px;
-    padding: 15px;
-    width: 100%;
-    overflow-x: scroll;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  @media (max-width: 480px) {
-    font-size: 9px;
-    padding: 10px;
-  }
-`;
 
 const DrippedUp2 = () => {
   return (
