@@ -34,6 +34,28 @@ const Blog = () => {
           <div className="cards-container">
 
           <BlogCard
+              title="AI Ethics"
+              category="Can We Measure Morality and Values in LLMs?"
+              readTime="12"
+              publishedDate="March 3, 2026"
+              excerpt="Exploring the challenges and approaches to measuring morality in AI systems. From MoralBench to FAI frameworks - can we truly capture human values?"
+              authorMatch={100}
+              buttonText="Read Article"
+              buttonLink="/morality-llms"
+            />
+
+          <BlogCard
+              title="Machine Learning"
+              category="A Quick Introduction to METEOR"
+              readTime="8"
+              publishedDate="March 3, 2026"
+              excerpt="Understanding METEOR metric for machine translation evaluation. How it addresses BLEU's limitations and why recall matters in translation quality..."
+              authorMatch={100}
+              buttonText="Read Article"
+              buttonLink="/meteor-blog"
+            />
+
+          <BlogCard
               title="Personal Project"
               category="Building an AI Outfit Creator - Part 2 "
               readTime="10"

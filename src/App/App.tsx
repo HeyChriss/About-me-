@@ -14,6 +14,8 @@ import Siamese from './pages/siamese';
 import Xception from './pages/xception';
 import DrippedUp1 from './pages/drippedup1';
 import DrippedUp2 from './pages/drippedup2';
+import MeteorBlog from './pages/meteor_blog';
+import MoralityLLMs from './pages/morality_llms';
 
 export const App = () => {
   const [isReady, setIsReady]: [boolean, Function] = useState(false);
@@ -74,6 +76,8 @@ export const App = () => {
             <Route path="/xception" element={<Xception />} />
             <Route path="/drippedup1" element={<DrippedUp1 />} />
             <Route path="/drippedup2" element={<DrippedUp2 />} />
+            <Route path="/meteor-blog" element={<MeteorBlog />} />
+            <Route path="/morality-llms" element={<MoralityLLMs />} />
           </Routes>
 
           <Footer />
