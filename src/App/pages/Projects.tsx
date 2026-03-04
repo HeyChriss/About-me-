@@ -57,6 +57,22 @@ const Projects = () => {
           <h1>Projects and Experience</h1>
           <div className="cards-container">
           <Card
+              image="/NoraPallogo.png"
+              title="NoraPal Multi-Agent AI Assistant"
+              type="AI Multi-Agent System"
+              description="A comprehensive AI-powered platform designed to enhance the first-year college experience through intelligent task automation. Features an orchestrator agent managing four specialized agents: Research & Web Scraping, Canvas Integration, Flashcard Generation, and Email Management. Built with Next.js, OpenAI GPT API, Tavily API, and Canvas API integration. Project at BYU REDO Hackathon 2025."
+              buttonText="Github Link"
+              buttonLink="https://github.com/HeyChriss/GradientDescentBYU2025"
+            />
+          <Card
+              image="/eduvision.png"
+              title="EduVision: AI-Powered Campus Analytics"
+              type="Computer Vision & AI System"
+              description="Winner of BYU-I Hackathon 2025. An AI-powered desktop application for real-time campus occupancy monitoring and analytics using YOLOv8 computer vision. Features automated attendance tracking, predictive analytics for course planning, multi-camera support, and comprehensive data visualization. Built with PyQt5, YOLOv8, SQLite, and includes a fine-tuned model achieving 90% accuracy for campus environments."
+              buttonText="Github Link"
+              buttonLink="https://github.com/roger18gm/eduvision"
+            />
+          <Card
               image="/drippedup.png"
               title="Dripped Up"
               type="AI application and ML model"
