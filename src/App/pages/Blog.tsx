@@ -34,6 +34,17 @@ const Blog = () => {
           <div className="cards-container">
 
           <BlogCard
+              title="AI Alignment"
+              category="Helpful, Harmless, Honest? Limits of RLHF"
+              readTime="9"
+              publishedDate="March 9, 2026"
+              excerpt="HHH made alignment easier to communicate, but real-world trade-offs reveal its limits. A closer look at RLHF, RLAIF, and conflict-heavy safety scenarios."
+              authorMatch={100}
+              buttonText="Read Article"
+              buttonLink="/hhh-limits-rlhf"
+            />
+
+          <BlogCard
               title="AI Ethics"
               category="Can We Measure Morality and Values in LLMs?"
               readTime="12"
