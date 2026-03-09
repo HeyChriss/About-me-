@@ -10,6 +10,17 @@ const HHHLimits = () => {
       postId="hhh-limits-rlhf"
     >
       <p>
+        If you want to read this post on Medium, you can read it{' '}
+        <a
+          href="https://medium.com/@christianmijangos.cm/helpful-harmless-honest-limits-of-rlhf-2b32a51c14fe"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          here
+        </a>.
+      </p>
+
+      <p>
         Alignment in LLMs is more common than we think. These days, we try to create models that are
         pro-social and helpful while also staying safe and avoiding overconfidence. The cycle often
         looks like this: take a base LLM, add preference modeling, crank RLHF, and call it “aligned”
@@ -24,17 +35,6 @@ const HHHLimits = () => {
 
       <img src="/hhh-venn.jpg" alt="Helpful, Honest, Harmless Venn diagram" style={{ width: '65%' }} />
       <blockquote>Helpful, Harmless, and Honest often overlap — but not always in practice.</blockquote>
-
-      <p>
-        If you want to read this post on Medium, you can read it{' '}
-        <a
-          href="https://medium.com/@christianmijangos.cm/helpful-harmless-honest-limits-of-rlhf-2b32a51c14fe"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          here
-        </a>.
-      </p>
 
       <h2>Trade-offs with HHH</h2>
       <p>
