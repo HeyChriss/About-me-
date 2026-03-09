@@ -25,6 +25,17 @@ const HHHLimits = () => {
       <img src="/hhh-venn.jpg" alt="Helpful, Honest, Harmless Venn diagram" style={{ width: '65%' }} />
       <blockquote>Helpful, Harmless, and Honest often overlap — but not always in practice.</blockquote>
 
+      <p>
+        If you want to read this post on Medium, you can read it{' '}
+        <a
+          href="https://medium.com/@christianmijangos.cm/helpful-harmless-honest-limits-of-rlhf-2b32a51c14fe"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          here
+        </a>.
+      </p>
+
       <h2>Trade-offs with HHH</h2>
       <p>
         In pure RLHF, humans still stay in the loop: people rank samples, a reward model learns those
