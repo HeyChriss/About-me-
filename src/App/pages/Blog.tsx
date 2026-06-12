@@ -34,6 +34,17 @@ const Blog = () => {
           <div className="cards-container">
 
           <BlogCard
+              title="AI Safety"
+              category="What is going to happen when AI builds itself?"
+              readTime="6"
+              publishedDate="June 10, 2026"
+              excerpt="Reflecting on Anthropic's research on recursive self-improvement — from engineering bottlenecks to three future scenarios and why AI literacy matters for everyone."
+              authorMatch={100}
+              buttonText="Read Article"
+              buttonLink="/ai-builds-itself"
+            />
+
+          <BlogCard
               title="AI Alignment"
               category="Helpful, Harmless, Honest? Limits of RLHF"
               readTime="9"

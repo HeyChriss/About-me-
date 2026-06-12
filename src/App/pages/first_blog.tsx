@@ -54,7 +54,7 @@ const FirstBlog = () => {
         <li><strong>Tools:</strong> Git, VS Code, Docker</li>
       </ul>
       <p>
-        If you want to see more about my projects, you can check out my <a href="/projects">projects page</a>. Or if you want to see my resume, you can check out my <a href="https://drive.google.com/file/d/1r7f3OISl9Dw_t8boOS-ewd-7Ea3oDD04/view?usp=sharing">resume page</a>.
+        If you want to see more about my projects, you can check out my <a href="/projects">projects page</a>. Or if you want to see my resume, you can check out my <a href="https://drive.google.com/file/d/1i2sHsBAy4POM05-aghpVVIpTgtaQIb0r/view?usp=sharing">resume page</a>.
       </p>
 
       <h2>Looking Forward</h2>

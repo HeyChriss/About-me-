@@ -17,6 +17,7 @@ import DrippedUp2 from './pages/drippedup2';
 import MeteorBlog from './pages/meteor_blog';
 import MoralityLLMs from './pages/morality_llms';
 import HHHLimits from './pages/hhh_limits';
+import AIBuildsItself from './pages/ai_builds_itself';
 
 export const App = () => {
   const [isReady, setIsReady]: [boolean, Function] = useState(false);
@@ -80,6 +81,7 @@ export const App = () => {
             <Route path="/meteor-blog" element={<MeteorBlog />} />
             <Route path="/morality-llms" element={<MoralityLLMs />} />
             <Route path="/hhh-limits-rlhf" element={<HHHLimits />} />
+            <Route path="/ai-builds-itself" element={<AIBuildsItself />} />
           </Routes>
 
           <Footer />
